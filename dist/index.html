@@ -442,7 +442,9 @@
                 </div>
 
                 <div class="w-full md:w-6/12 lg:w-8/12 xl:w-6/12">
-                    <form class="h-full w-full flex flex-col lg:flex-row justify-end" action="">
+                    <form class="h-full w-full flex flex-col lg:flex-row justify-end" 
+                          name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field"> <!--  - zabezp. przed spanem -->
+                        <input type="hidden" name="newsletter" value="newsletter">
                         <input type="email" name="email" id="email" placeholder="Wpisz tutaj swój adres email..."
                                class="z-10 px-4 py-3 placeholder-purple-300 bg-purple-600 text-white border border-purple-400 rounded focus:outline-none focus:ring-2 focus:ring-purple-400 w-full lg:w-96">
                         <input  value="Zapisz się"
